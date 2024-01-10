@@ -140,7 +140,7 @@ body {
         padding-right: 4px;
         padding-left: 4px;
         text-align: center;
-        font-size: 1.0em;
+        font-size: 1.3em;
         color: gainsboro;
         margin-top: 16%;
         margin-bottom: auto;
@@ -149,7 +149,7 @@ body {
 
     .subtitle {
         text-align: center;
-        font-size: 0.1em;
+        font-size: 0.5em;
         color: darkgray;
     }
 
