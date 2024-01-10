@@ -1,149 +1,185 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Perfil HiTech Card | Cartão de Visitas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content=" " />
+    <meta name="author" content="Felix">
+
+</head>
+
+
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) scaleY(1)
+        }
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat', serif;
+        50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.55)
+        }
+
+        100% {
+            transform: translateX(-50%) translateZ(0) scaleY(1)
+        }
     }
 
-    body {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    #top {
-        position: relative;
-        width: 100%;
-        height: 100%;
+    .waveWrapper {
         overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-        #top::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            height: 200px;
-            width: 100%;
-            background: linear-gradient(to top,#fff,transparent);
-            z-index: 1000;
-        }
-
-    #man {
-        top: inherit;
-        bottom: 0;
-    }
-
-    section img {
         position: absolute;
-        top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    .waveWrapperInner {
+        position: absolute;
         width: 100%;
+        overflow: hidden;
         height: 100%;
-        object-fit: cover;
-        pointer-events: none;
+        bottom: -1px;
+        background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
     }
 
-    #text {
-        position: relative;
-        color: white;
-        font-size: 10rem;
+
+    .bgTop {
+        z-index: 15;
+        opacity: 0.5;
     }
 
-    #sec {
-        padding: 100px;
-        padding-bottom: 20px;
+    .bgMiddle {
+        z-index: 10;
+        opacity: 0.75;
     }
 
-        #sec h2 {
-            font-size: 4rem;
-            margin-bottom: 30px;
-            color: #20496a;
-        }
-
-        #sec p {
-            font-size: 1.2rem;
-            line-height: 2rem;
-            font-weight: 300;
-            color: #20496a;
-        }
-
-    footer {
-        margin-top: 30px;
-        display: flex;
-        padding: 20px;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #B0DFEA;
+    .bgBottom {
+        z-index: 5;
     }
 
-        footer a {
-            color: #20496a;
-        }
+    .wave {
+        position: absolute;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        transform-origin: center bottom;
+    }
 
-            footer a i {
-                transition: 0.2s;
-            }
+    .waveTop {
+        background-size: 50% 100px;
+    }
 
-            footer a:nth-of-type(3), footer a:nth-of-type(4), footer a:nth-of-type(5) {
-                font-size: 1.3rem;
-            }
+    .waveAnimation .waveTop {
+        animation: move-wave 3s;
+        -webkit-animation: move-wave 3s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+    }
 
-            footer a i:hover {
-                transform: translateY(-10px);
-            }
+    .waveMiddle {
+        background-size: 50% 120px;
+    }
 
+    .waveAnimation .waveMiddle {
+        animation: move_wave 10s linear infinite;
+    }
 
+    .waveBottom {
+        background-size: 50% 100px;
+    }
+
+    .waveAnimation .waveBottom {
+        animation: move_wave 15s linear infinite;
+    }
 </style>
 
 
-<section id="top">
-    <img src="https://aryan-tayal.github.io/Mountains-Parallax/bg.jpg" id="bg" />
-    <h2 id="text">Mountains</h2>
-    <img src="https://aryan-tayal.github.io/Mountains-Parallax/man.png" id="man" />
-    <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_1.png" id="clouds_1" />
-    <img src="https://aryan-tayal.github.io/Mountains-Parallax/clouds_2.png" id="clouds_2" />
-    <img src="images/esquerdo.png" id="mountain_left" />
-    <img src="images/direito.png
-" id="mountain_right" />
-</section>
-<section id="sec">
-    <h2>Welcome to the Mountains</h2>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A earum ipsam laboriosam mollitia, architecto esse voluptates eligendi provident soluta et cupiditate sit nisi at dolorum iure dignissimos cumque amet necessitatibus blanditiis? Earum assumenda soluta reiciendis recusandae, incidunt tenetur nihil adipisci corrupti, quibusdam ullam numquam iusto veritatis facilis ab dicta, nobis inventore eius magni eveniet quo? Repellat nobis quos, facilis quam perspiciatis asperiores delectus, aliquid nihil molestias in at modi nulla minima deleniti. Minima aliquid magnam libero reiciendis et, nesciunt repellendus eum vel rerum alias ea enim fugiat eius. Quae dolores, amet nam ab officiis corrupti sequi eligendi quo culpa illum.
-    </p>
-</section>
-<footer>
-    <a href=""><i class="fa-solid fa-house"></i></a>
-    <a href=""><i class="fa-solid fa-mountain-sun"></i></a>
-    <a href=""><i class="fa-solid fa-person-hiking"></i></a>
-    <a href=""><i class="fa-solid fa-people-group"></i></a>
-    <a href=""><i class="fa-solid fa-gears"></i></a>
-</footer>
-
-<script>
-
-    const mountainLeft = document.querySelector('#mountain_left');
-    const mountainRight = document.querySelector('#mountain_right');
-    const cloud1 = document.querySelector('#clouds_1');
-    const cloud2 = document.querySelector('#clouds_2');
-    const text = document.querySelector('#text');
-    const man = document.querySelector('#man');
-
-    window.addEventListener('scroll', () => {
-        let value = scrollY;
-        mountainLeft.style.left = `-${value / 0.7}px`
-        cloud2.style.left = `-${value * 2}px`
-        mountainRight.style.left = `${value / 0.7}px`
-        cloud1.style.left = `${value * 2}px`
-        text.style.bottom = `-${value}px`;
-        man.style.height = `${window.innerHeight - value}px`
-    })
+<body>
 
 
-</script>
+
+
+
+    <div class="waveWrapper waveAnimation">
+       
+       
+        <div class="waveWrapperInner bgTop">
+
+            <!--Card-->
+            <div class="card animated fadeIn">
+                <center><a href="https://hitechmg.com.br"><img class="center animated rollIn" src="img/ava.png" alt="avatar"></a></center>
+                <hr>
+                <div class="name">
+                    <font color="#2a0536">Gráfica Smart Comunicação Visual </font>
+                </div>
+                <p class="subtitle"><font color="#110117">Soluções de Informática e Web</font></p>
+                <p class="location">
+                    <i class="fa fa-globe"> </i><a href="https://hitechmg.com.br"> Clique para abrir nosso site!</a>
+                </p>
+                <p class="location">
+                    <i class="fa fa-map-marker"> </i><a href="https://goo.gl/maps/HpKnjSbboiuC4A5Z9" target="_blank"> Onde ficamos?</a>
+                </p>
+                <p class="icons animated pulse">
+                    <a href="https://api.whatsapp.com/send?phone=5532998045795&text=Olá,%20tenho%20uma%20pergunta!" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-whatsapp fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/atendimentohitech" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-3x fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/atendimentohitech/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://github.com/laboratorionftadmin" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </p>
+            </div>
+            <!--footer-->
+            <footer class="animated fadeIn">
+                <a href="https://hitechmg.com.br"><font color="white">© 2022  HiTech Soluções</font></a>
+            </footer>
+
+
+
+            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
+
+</html>
