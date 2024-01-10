@@ -32,7 +32,8 @@ body {
 @media screen and (min-width: 1001px) {
     .card {
         margin-left: 32%;
-        margin-top: 2%;
+        margin-top: 1%;
+      
         padding: 0px;
         background-color: white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -50,13 +51,13 @@ body {
         border-radius: 15%;
         margin-top: 8%;
         margin-bottom: -15% !important;
-        width: 45%;
-        height: 180px;
+        width: 35%;
+        height: 160px;
     }
 
     .name {
         text-align: center;
-        font-size: 2.0em;
+        font-size: 1.9em;
         color: gainsboro;
         margin-top: 15%;
         margin-bottom: auto;
@@ -82,7 +83,7 @@ body {
         margin-right: 0px;
         margin-left: 0px;
         color: darkgray;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .location {
