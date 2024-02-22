@@ -66,7 +66,7 @@ body{
 #header{
     background:#171717;
     height: 100vh;
-    width: 100%;;
+    width: 100%;
     overflow: hidden;
     animation: scale 1.5s ease;
     position:relative;
@@ -263,11 +263,11 @@ body{
     z-index: 2;
     font-weight:700;
     font-family: poppins;
-    font-size: 65px;
+    font-size: 45px;
 }
 .header-content .secondline{
     z-index: 2;
-    font-size: 30px;
+    font-size: 20px;
     padding-top:20px ;
     font-weight:500;
     color: rgb(255, 255, 255,.8);
