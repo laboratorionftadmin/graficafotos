@@ -1,15 +1,21 @@
 User-agent: *
-
+Sitemap: /sitemap.xml
 Sitemap: https://graficasmart.com/sitemap.xml
 Sitemap: https://www.graficasmart.com/sitemap.xml
 Sitemap: https://graficasmart.com/site/sitemap.xml
 Sitemap: https://www.graficasmart.com/site/sitemap.xml
+Sitemap: https://www.graficasmart.com/site#/sitemap.xml
+Sitemap: https://www.graficasmart.com/#/sitemap.xml
 
 Sitemap: https://graficasmart.com/
 Sitemap: https://www.graficasmart.com/
 Sitemap: https://graficasmart.com/site/
 Sitemap: https://www.graficasmart.com/site/
+Sitemap: https://www.graficasmart.com/site#/
+Sitemap: https://www.graficasmart.com/#/
 
 Allow: https://www.graficasmart.com/site/
 Allow: https://www.graficasmart.com/
 Allow: https://www.graficasmart.com
+Allow: https://www.graficasmart.com/site#/
+Allow: https://www.graficasmart.com/#/
