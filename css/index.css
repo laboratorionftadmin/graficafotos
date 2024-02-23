@@ -1779,7 +1779,7 @@ For devices with smaller width like mobile phone
             .contact-info-header{
                 position: relative;
                 z-index: 2;
-                font-size: 24px;
+                font-size: 16px;
                 font-family: poppins;
                 font-weight: 400;
                 color: whitesmoke;
@@ -1802,7 +1802,7 @@ For devices with smaller width like mobile phone
                 font-family: poppins;
             }
             .contact-info-icon-text h6{
-                font-size: 15px;
+                font-size: 10px;
                 opacity: .8;
             }
             .contact-info-icon-text p{
