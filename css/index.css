@@ -50,6 +50,7 @@ input[type=number] {
       color: whitesmoke;
       font-size: 40px;
       width: 100%;
+      
   }
 body{
     user-select: none;
