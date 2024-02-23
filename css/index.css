@@ -261,6 +261,7 @@ body{
     font-family: poppins;
     font-size: 45px;
     align-content: center;
+    image-resolution:600dpi;
     
 }
 .header-content .secondline{
