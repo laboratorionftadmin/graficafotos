@@ -231,7 +231,7 @@ body{
     height: 100vh;
 
 }
-.header-content{
+.header-content {
     height: 100vh;
     width: 100%;
     float: left;
@@ -246,6 +246,7 @@ body{
     flex-direction: column;
     font-size: 50px;
     z-index: 1;
+    image-resolution: 1080dpi;
 }
 .header-content-box{
     z-index: 2;
