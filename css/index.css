@@ -236,7 +236,7 @@ body{
     width: 100%;
     float: left;
     display: flex;
-    position: absolute;
+    position: center;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
@@ -261,7 +261,10 @@ body{
     font-family: poppins;
     font-size: 45px;
     align-content: center;
-    image-resolution:600dpi;
+    image-resolution:1080dpi;
+    align-items: center;
+    align-self: center;
+   
     
 }
 .header-content .secondline{
