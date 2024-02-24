@@ -8,7 +8,6 @@ Sitemap: https://graficasmart.com/site/sitemap.xml
 Sitemap: https://www.graficasmart.com/site/sitemap.xml
 Sitemap: https://www.graficasmart.com/site#/sitemap.xml
 Sitemap: https://www.graficasmart.com/#/sitemap.xml
-Sitemap: /sitemap.xml
 
 Sitemap: https://graficasmart.com/
 Sitemap: https://www.graficasmart.com/
