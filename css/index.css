@@ -484,7 +484,7 @@ body{
     font-size: 40px;
 }
 .about-first-line{
-    font-size: 35px;
+    font-size: 30px;
     opacity: 1;
     margin-bottom: 10px;
     display: block;
@@ -1469,7 +1469,7 @@ For devices with smaller width like mobile phone
         font-size: 30px;
     }
     .about-first-line{
-        font-size: 28px;
+        font-size: 23px;
         opacity: 1;
         margin-bottom: 10px;
         display: block;
