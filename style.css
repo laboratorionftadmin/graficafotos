@@ -77,6 +77,10 @@ body {
         color: darkgray;
     }
 
+    h1 {
+        line-height: 0.7; /* Ajuste este valor para diminuir ou aumentar o espaçamento */
+    }
+
     .icons {
         font-size: 15px;
         text-align: center;
