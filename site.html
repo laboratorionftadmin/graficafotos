@@ -413,7 +413,7 @@
                     <div class="form-header">
                         Nos envie uma mensagem
                     </div>
-                    <form id="myForm" action="mailto:contato@graficasmart.com" method="post">
+                    <form id="myForm" action="mailto:contato@graficasmart.com">
                         <div class="input-line">
                             <input id="name" type="text" placeholder="Nome" class="input-name">
                             <input id="email" type="email" placeholder="Email" class="input-name">
@@ -723,16 +723,29 @@
                         function fecharImagemAmpliada() {
                             document.getElementById('imagemAmpliada').classList.remove('ativa');
                         }
+
+                        function mostrarCategoria(id) {
+                            var categoria = document.getElementById(id);
+                            if (categoria.style.display === "none" || categoria.style.display === "") {
+                                categoria.style.display = "block";
+                            } else {
+                                categoria.style.display = "none";
+                            }
+                        }
+
+
+
+                    
                     </script>
 
                     <!--fim galeria-->
-                    <!--copyright-section You Can Remove After Downloading-->
+                    <!--copyright--->
                     <div class="footer">
                         <div class="footer-text">
                             <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> 2025 - Gráfica Smart - Comunicação Visual - São João del Rei - MG - CNPJ: 55.979.437/0001-00
                         </div>
                     </div>
-                    <!--copyright-section-->
+                    <!--copyright--->
 </div>
             <!--blog end-->
 
