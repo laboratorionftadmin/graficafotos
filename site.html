@@ -423,7 +423,24 @@
                         <button type="button" id="submit" value="send">Enviar</button>
 
                     </form>
-                    
+
+                    <script>
+                        document.getElementById("submit").addEventListener("click", function () {
+                            var name = document.getElementById("name").value;
+                            var email = document.getElementById("email").value;
+                            var subject = document.getElementById("subject").value;
+                            var body = document.getElementById("body").value;
+
+                            if (name && email && subject && body) {
+                                var mailtoLink = `mailto:contato@graficasmart.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Nome: " + name + "\nEmail: " + email + "\n\n" + body)}`;
+                                window.location.href = mailtoLink;
+                            } else {
+                                alert("Por favor, preencha todos os campos!");
+                            }
+                        });
+                    </script>
+
+
                 </div>
                 <!--Contato formulário-->
                 <!--Contato informações-->
