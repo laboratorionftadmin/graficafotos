@@ -78,7 +78,7 @@ body {
     }
 
     h1 {
-        line-height: 0.7; /* Ajuste este valor para diminuir ou aumentar o espaçamento */
+        line-height: 0.5; /* Ajuste este valor para diminuir ou aumentar o espaçamento */
     }
 
     .icons {
