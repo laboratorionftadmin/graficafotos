@@ -46,23 +46,7 @@
     <meta name="facebook-domain-verification" content="7dwjdgwn4s8ocg86rfexcmg6ns0yt1" />
 </head>
 
-<style>
-    #popup {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #333;
-        color: white;
-        padding: 15px;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-    }
 
-        #popup:hover {
-            transform: scale(1.1);
-        }
-</style>
 <style>
     @keyframes move_wave {
         0% {
@@ -152,6 +136,35 @@
     .waveAnimation .waveBottom {
         animation: move_wave 15s linear infinite;
     }
+
+    #popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border: outset;
+    }
+
+        #popup:hover {
+            transform: scale(1.1);
+        }
+
+    .jogo {
+        width: 100%;
+        max-width: 70px;
+        display: block;
+        margin: auto;
+       height: 100%;
+        border: none;
+    }
+    
+
+
 </style>
 
 
@@ -221,7 +234,11 @@
                 </a>
             </footer>
 
+            <div id="popup">
+                <p><img class="jogo" src="img\controle.png" /></p>
+            </div>
 
+            <script src="script.js"></script>
 
             <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
         </div>
@@ -232,5 +249,29 @@
             <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
         </div>
     </div>
+
 </body>
+
+
+
+<script>
+
+
+
+
+
+
+
+    document.getElementById("popup").addEventListener("click", function () {
+        const newWindow = window.location.href = "jogo.html";
+        if (newWindow) {
+            newWindow.document.write(
+             );
+        } else {
+            alert("Permissão para abrir popups foi bloqueada!");
+        }
+    });
+
+</script>
+
 </html>
