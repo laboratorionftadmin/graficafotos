@@ -46,7 +46,23 @@
     <meta name="facebook-domain-verification" content="7dwjdgwn4s8ocg86rfexcmg6ns0yt1" />
 </head>
 
+<style>
+    #popup {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
+        #popup:hover {
+            transform: scale(1.1);
+        }
+</style>
 <style>
     @keyframes move_wave {
         0% {
@@ -139,6 +155,8 @@
 </style>
 
 
+
+
 <body>
 
 
@@ -146,70 +164,73 @@
 
 
     <div class="waveWrapper waveAnimation">
-       
-       
+
+
         <div class="waveWrapperInner bgTop"></div>
 
-            <div class="waveWrapperInner bgTopo">
+        <div class="waveWrapperInner bgTopo">
 
-                <!--Card-->
-                <div class="card animated fadeIn">
-                    <center><a href="#"><img class="center animated rollIn" src="img/ava.png" alt="avatar"></a></center>
-                    <hr>
-                    <div class="name">
-                        <font color="#110117">Gráfica Smart<br /> Comunicação Visual </font>
-                    </div>
-                    <p class="subtitle"><font color="#110117" size="4%"><h1><center>Gráfica em São João del Rei ( <font color="#511469">SJDR</font> )<br /><font size="3%">Se dá pra imaginar, da pra imprimir!🖨️🚀</font></center></h1></font></p>
-                    <p class="location">
-                        <i class="fa fa-globe"> </i><a href="site.html"> Clique para abrir nosso site!</a>
-                    </p>
-                    <p class="location">
-                        <i class="fa fa-map-marker"> </i><a href="https://goo.gl/maps/HpKnjSbboiuC4A5Z9" target="_blank"> Onde ficamos?</a>
-                    </p>
-                    <p class="icons animated pulse">
-                        <a href="https://api.whatsapp.com/send?phone=5532998045795&text=Olá,%20tenho%20uma%20pergunta!" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-whatsapp fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.instagram.com/smart_comunicacao_visual" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-instagram fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.facebook.com/agraficasmart/" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-3x fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x"></i>
-                            </span>
-                        </a>
-                        <a href="https://g.page/r/CS1JH7TcrEe-EBE/review" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                <i class="fa fa-google fa-stack-1x"></i>
-                            </span>
-                        </a>
-                    </p>
+            <!--Card-->
+            <div class="card animated fadeIn">
+                <center><a href="#"><img class="center animated rollIn" src="img/ava.png" alt="avatar"></a></center>
+                <hr>
+                <div class="name">
+                    <font color="#110117">Gráfica Smart<br /> Comunicação Visual </font>
                 </div>
-                <!--footer-->
-                <footer class="animated fadeIn">
-                    <a href="#"><font color="white">
-    © 2024 Gráfica Smart Comunicação Visual - Rua Expedicionário Francisco Batista Rios, 425 - Matozinhos, São João del Rei, Minas Gerais, MG - 36305-202 - Contato: (32) 99804-5795 - CNPJ:55.979.437/0001-00
-</font></a>
-                </footer>
+                <p class="subtitle"><font color="#110117" size="4%"><h1><center>Gráfica em São João del Rei ( <font color="#511469">SJDR</font> )<br /><font size="3%">Se dá pra imaginar, da pra imprimir!🖨️🚀</font></center></h1></font></p>
+                <p class="location">
+                    <i class="fa fa-globe"> </i><a href="site.html"> Clique para abrir nosso site!</a>
+                </p>
+                <p class="location">
+                    <i class="fa fa-map-marker"> </i><a href="https://goo.gl/maps/HpKnjSbboiuC4A5Z9" target="_blank"> Onde ficamos?</a>
+                </p>
+                <p class="icons animated pulse">
+                    <a href="https://api.whatsapp.com/send?phone=5532998045795&text=Olá,%20tenho%20uma%20pergunta!" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-whatsapp fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.instagram.com/smart_comunicacao_visual" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-instagram fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/agraficasmart/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-3x fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://g.page/r/CS1JH7TcrEe-EBE/review" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle-thin fa-stack-2x"></i>
+                            <i class="fa fa-google fa-stack-1x"></i>
+                        </span>
+                    </a>
+                </p>
+            </div>
+
+            <!--footer-->
+            <footer class="animated fadeIn">
+                <a href="#">
+                    <font color="white">
+                        © 2024 Gráfica Smart Comunicação Visual - Rua Expedicionário Francisco Batista Rios, 425 - Matozinhos, São João del Rei, Minas Gerais, MG - 36305-202 - Contato: (32) 99804-5795 - CNPJ:55.979.437/0001-00
+                    </font>
+                </a>
+            </footer>
 
 
 
-                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgMiddle">
-                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgBottom">
-                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-            </div>
+            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
         </div>
-
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+    </div>
+</body>
 </html>
