@@ -531,6 +531,9 @@
                 Galeria</span>
                 <span class="header-caption"> As últimas fotos <span class="color"> de nossa galeria.</span></span>
             </div>
+
+
+
             <div class="blog-content">
 
 
@@ -558,7 +561,7 @@
 
 
                     button {
-                        background-color: #00909e;
+                        background-color: #080808;
                         border: none;
                         color: white;
                         padding: 15px 32px;
@@ -570,10 +573,11 @@
                         cursor: pointer;
                         transition-duration: 0.4s;
                         border-radius: 8px;
+                        font-family: raleway;
                     }
 
                         button:hover {
-                            background-color: #777;
+                            background-color: black;
                         }
 
                     .categoria {
@@ -633,12 +637,15 @@
                 </style>
                 </head>
                 <body>
-                    <button onclick="mostrarCategoria('categoria1')">Envelopamentos</button>
-                    <button onclick="mostrarCategoria('categoria2')">Faixas</button>
-                    <button onclick="mostrarCategoria('categoria3')">Adesivos</button>
-                    <button onclick="mostrarCategoria('categoria4')">Panfletos</button>
-                    <button onclick="mostrarCategoria('categoria5')">Personalizados</button>
-                    <button onclick="mostrarCategoria('categoria6')">Cartões de Visita</button>
+
+
+
+                    <button onclick="mostrarCategoria('categoria1')"><span class="color"><b>Envelopamentos</b></span></button>
+                    <button onclick="mostrarCategoria('categoria2')"><span class="color"><b>Faixas</b></span></button>
+                    <button onclick="mostrarCategoria('categoria3')"><span class="color"><b>Adesivos</b></span></button>
+                    <button onclick="mostrarCategoria('categoria4')"><span class="color"><b>Panfletos</b></span></button>
+                    <button onclick="mostrarCategoria('categoria5')"><span class="color"><b>Personalizados</b></span></button>
+                    <button onclick="mostrarCategoria('categoria6')"><span class="color"><b>Cartões de Visita</b></span></button>
 
                     <div id="categoria1" class="categoria">
                         <img src="images/geladeira1.jpeg" onclick="ampliarImagem(this)">
@@ -820,7 +827,7 @@
                         <img id="imagemExibida" src="">
                     </div>
 
-                 
+
 
                     <!-- Categorias com imagens (ocultas inicialmente) -->
                     <div id="categoria1" class="categoria" style="display: none;">
@@ -869,7 +876,7 @@
                         </div>
                     </div>
                     <!--copyright--->
-</div>
+            </div>
             <!--blog end-->
 
 
