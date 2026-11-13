@@ -39,6 +39,7 @@
     <!--favicon-img-->
     <!--css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/smart-platform-modal.css">
     <!--css-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
@@ -72,9 +73,8 @@
             <div class="navigation-links">
                 <a href="#" data-text="INÍCIO" id="home-link">INÍCIO</a>
                 <a href="#" data-text="SOBRE NÓS" id="about-link">SOBRE NÓS</a>
-
                 <a href="#" data-text="GALERIA" id="blog-link">GALERIA</a>
-
+                <a href="/plataforma/" target="_blank" rel="noopener noreferrer" data-text="PLATAFORMA SMART" id="plataforma-smart-nav-link" style="color: #00e5ff;" onclick="if(location.protocol==='file:'){window.open('https://www.graficasmart.com/plataforma/','_blank');return false;}">PLATAFORMA SMART ↗</a>
                 <!--   <a href="#" data-text="NOSSOS SERVIÇOS" id="portfolio-link">NOSSOS SERVIÇOS</a>  -->
                 <a href="#" data-text="CONTATO" id="contact-link">CONTATO</a>
             </div>
@@ -932,6 +932,12 @@
 
         </div>
 
+
+        <!-- Botão Flutuante de Acesso Rápido à Plataforma -->
+        <a id="smartPlataformaFloat" href="/plataforma/" target="_blank" rel="noopener noreferrer" title="Abrir Plataforma Smart" onclick="if(location.protocol==='file:'){window.open('https://www.graficasmart.com/plataforma/','_blank');return false;}">
+            <span class="smart-float-dot"></span>
+            <span>🚀 Plataforma Smart</span>
+        </a>
 
         <!--todas as divisórias-->
         <script src="js/jquery.min.js"></script>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/smart-platform-modal.css">
     <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
     <meta charset="utf-8">
@@ -197,6 +198,9 @@
                     <i class="fa fa-globe"> </i><a href="site.html"> Clique para abrir nosso site!</a>
                 </p>
                 <p class="location">
+                    <i class="fa fa-th-large"> </i><a href="/plataforma/" target="_blank" rel="noopener noreferrer" onclick="if(location.protocol==='file:'){window.open('https://www.graficasmart.com/plataforma/','_blank');return false;}"> Abrir Plataforma Smart</a>
+                </p>
+                <p class="location">
                     <i class="fa fa-map-marker"> </i><a href="https://goo.gl/maps/HpKnjSbboiuC4A5Z9" target="_blank"> Onde ficamos?</a>
                 </p>
                 <p class="icons animated pulse">
@@ -239,6 +243,12 @@
             <div id="popup">
                 <p><img class="jogo" src="img\controle.png" /></p>
             </div>
+
+            <!-- Botão Flutuante de Acesso Rápido à Plataforma -->
+            <a id="smartPlataformaFloat" href="/plataforma/" target="_blank" rel="noopener noreferrer" title="Abrir Plataforma Smart" onclick="if(location.protocol==='file:'){window.open('https://www.graficasmart.com/plataforma/','_blank');return false;}">
+                <span class="smart-float-dot"></span>
+                <span>🚀 Plataforma Smart</span>
+            </a>
 
             <script src="script.js"></script>
 

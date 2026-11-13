@@ -1,0 +1,27 @@
+# Netlify Configuration for Gráfica Smart & Plataforma Smart
+
+[[redirects]]
+  from = "/plataforma/*"
+  to = "/plataforma/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/site"
+  to = "/site.html"
+  status = 200
+
+[[redirects]]
+  from = "/jogo"
+  to = "/jogo.html"
+  status = 200
+
+[[headers]]
+  for = "/plataforma/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Access-Control-Allow-Origin = "*"

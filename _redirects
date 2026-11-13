@@ -1,0 +1,8 @@
+# Netlify Redirects & SPA Rewrites for Gráfica Smart & Plataforma Smart
+
+# 1. SPA rewrite: serve the React application for any /plataforma sub-routes (curriculo, morphix, clt, etc.)
+/plataforma/*    /plataforma/index.html    200
+
+# 2. Clean URLs for existing pages
+/site            /site.html                200
+/jogo            /jogo.html                200
