@@ -21,3 +21,5 @@ Allow: https://www.graficasmart.com/
 Allow: https://www.graficasmart.com
 Allow: https://www.graficasmart.com/site#/
 Allow: https://www.graficasmart.com/#/
+Allow: https://www.graficasmart.com/plataforma/
+Allow: /plataforma/
